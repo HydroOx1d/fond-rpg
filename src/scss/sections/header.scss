@@ -1,0 +1,14 @@
+.header {
+  padding: 21px 0px 21px 0px;
+  &__logo {
+    &-img {
+      display: block;
+      max-width: 100px;
+    }
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

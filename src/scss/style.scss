@@ -9,7 +9,7 @@
 
 a {
   text-decoration: none;
-  color: $primary;
+  color: inherit;
   font-size: inherit;
   transition: color 150ms ease;
   &:hover {
@@ -63,4 +63,5 @@ body {
   }
 }
 
+@import './modules/global';
 @import "./sections/header";

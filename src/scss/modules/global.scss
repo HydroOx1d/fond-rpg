@@ -1,0 +1,18 @@
+.menu {
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+  &__item {
+    padding: 10px 10px 10px 10px;
+    margin: 0px 50px 0px 0px;
+    &._is-current {
+      border: 1px solid $secondary;
+      color: $secondary;
+      border-radius: 40px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

@@ -63,4 +63,6 @@ body {
   }
 }
 
+@import "./modules/global.scss";
 @import "./sections/header";
+@import "./sections/hero.scss";

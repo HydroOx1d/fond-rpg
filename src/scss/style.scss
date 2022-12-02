@@ -56,6 +56,9 @@ body {
   @media (max-width: 767px) {
     margin: 50px 0px 0px 0px;
   }
+  &__introduction {
+    padding: 50px 0px 50px 0px;
+  }
 }
 
 ._container {
@@ -72,3 +75,4 @@ body {
 
 @import './modules/global';
 @import "./sections/header";
+@import "./sections/introduction"

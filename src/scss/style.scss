@@ -11,9 +11,11 @@ a {
   text-decoration: none;
   color: inherit;
   font-size: inherit;
-  transition: color 150ms ease;
-  &:hover {
-    color: $secondary;
+  transition: all 150ms ease;
+  @media (min-width: 992px) {
+    &:hover {
+      color: $secondary;
+    }
   }
 }
 
@@ -27,6 +29,7 @@ ul, ol {
 img {
   width: 100%;
   height: 100%;
+  display: block;
 }
 
 body {
@@ -49,6 +52,16 @@ body {
 
 .page {
   flex: 1 1 100%;
+  margin: 80px 0px 0px 0px;
+  @media (max-width: 767px) {
+    margin: 50px 0px 0px 0px;
+  }
+  &__introduction {
+    padding: 50px 0px 50px 0px;
+  }
+  &__target {
+    padding: 50px 0px 50px 0px;
+  }
 }
 
 ._container {
@@ -65,3 +78,6 @@ body {
 
 @import './modules/global';
 @import "./sections/header";
+@import "./sections/introduction";
+@import "./sections/target";
+@import "./sections/footer"

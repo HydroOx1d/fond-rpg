@@ -1,0 +1,115 @@
+.footer {
+  background-color: $secondary;
+  color: white;
+  padding: 60px 0px 60px 0px;
+  &__header {
+    @media (min-width: 1200px) {
+      display: flex;
+      align-items: start;
+    }
+  }
+  &__title {
+    flex: 0 1 50%;
+    @media (max-width: 1200px) {
+      margin: 0px 0px 60px 0px;
+    }
+    &-text {
+      text-transform: uppercase;
+      margin: 0px 0px 20px 0px;
+    }
+    &-btn {
+      color: #ffffff;
+      border: 1px solid #ffffff;
+      svg {
+        fill: #ffffff;
+      }
+    }
+  } 
+  &__info {
+    flex: 0 0 50%;
+    max-width: 860px;
+    &-title {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: calc(28 / 24 * 100%);
+      max-width: 740px;
+      margin: 0px 0px 40px 0px;
+      @media (max-width: 576px) {
+        font-size: 16px;
+      }
+    }
+    &-list {
+      max-width: 700px;
+      padding: 0;
+      list-style: none;
+      & > *:not(:last-child) {
+        margin: 0px 0px 30px 0px;
+      }
+    }
+  }
+  &__bottom {
+    margin: 350px 0px 0px 0px;
+    @media (max-width: 992px) {
+      margin: 160px 0px 0px 0px;
+    }
+  }
+  &__data {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    margin: 0px -50px -60px;
+  }
+  &__column {
+    flex: 0 1 20%;
+    padding: 0px 50px 60px 50px;
+    @media (max-width: 1440px) {
+      flex: 0 1 25%;
+    }
+    @media (max-width: 992px) {
+      flex: 0 1 33.3333%;
+    }
+    @media (max-width: 767px) {
+      flex: 0 1 50%;
+    }
+    @media (max-width: 475px) {
+      flex: 0 1 100%;
+    }
+  }
+}
+
+.item {
+  &-info {
+    border-bottom: 1px solid #ffffff;
+    padding: 0px 0px 10px 0px;
+    @media (min-width: 576px) {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__text {
+      max-width: 420px;
+      margin: 0px 20px 0px 0px;
+      @media (max-width: 576px) {
+        margin: 0px 0px 10px 0px;
+      }
+    }
+    &__date {
+      white-space: nowrap;
+    }
+  }
+  &-data {
+    &__title {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: calc(18 / 16 * 100%);
+      margin: 0px 0px 20px 0px;
+      text-transform: uppercase;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: calc(20 / 16 * 100%);
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}

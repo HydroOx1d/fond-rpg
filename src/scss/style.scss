@@ -59,6 +59,9 @@ body {
   &__introduction {
     padding: 50px 0px 50px 0px;
   }
+  &__target {
+    padding: 50px 0px 50px 0px;
+  }
 }
 
 ._container {
@@ -75,4 +78,5 @@ body {
 
 @import './modules/global';
 @import "./sections/header";
-@import "./sections/introduction"
+@import "./sections/introduction";
+@import "./sections/target"

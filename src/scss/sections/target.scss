@@ -1,0 +1,32 @@
+.target {
+  &__header {
+    margin: 0px 0px 60px 0px;
+  }
+  &__title {
+    margin: 0px 0px 20px 0px;
+    max-width: 1190px;
+  }
+  &__cards {
+    margin: 0px 0px 60px 0px;
+    @media (min-width: 767px) {
+      display: flex;
+      & > *:not(:last-child) {
+        margin: 0px 40px 0px 0px;
+      }
+      & > *:first-child {
+        margin: 0px 40px 0px auto;
+      }
+    }
+    @media (max-width: 767px) {
+      & > *:not(:last-child) {
+        margin: 0px 0px 40px 0px;
+      }
+    }
+  }
+  &__image {
+    padding: 0px 0px 31.3% 0px;
+    @media (max-width: 767px) {
+      padding: 0px 0px 66.01% 0px;
+    }
+  }
+}

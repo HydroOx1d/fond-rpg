@@ -1,0 +1,51 @@
+.investment{
+    margin: 0 0 100px;
+
+    &__wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width: 767px) {
+            align-items: flex-start;
+            flex-direction: column;
+        }
+    }
+    &__info{
+        flex: 0 1 auto;
+    }
+    &__title{
+        max-width: 653px;
+        @media (max-width: 1440px) {
+            span{
+                font-size: 36px;       
+            }
+            font-size: 36px;
+        }
+        @media (max-width: 800px) {
+            span{
+                font-size: 36px;
+            }
+            font-size: 36px;
+        }
+    }
+    &__text{
+        max-width: 612px;
+        margin: 20px 0;
+    }
+    
+    &__image-wrap{
+        width: 100%;
+        flex: 0 1 660px;
+        padding: 0px 0px 31.3% 0px;
+        margin: 0 0 0 20px;
+
+        @media (max-width: 1440px) {
+            padding: 0px 0px 56.6% 0px;
+        }
+
+        @media (max-width: 767px) {
+            margin: 60px 0 0 0;
+            flex: 0 1 100%;
+        }
+    }
+}

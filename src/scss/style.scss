@@ -1,5 +1,8 @@
 @import './modules/variables';
 @import "./modules/ui";
+@import "../../node_modules/swiper/swiper.scss";
+@import "../../node_modules/swiper/modules/navigation/navigation.scss";
+
 
 * {
   margin: 0;
@@ -76,8 +79,13 @@ body {
   }
 }
 
+@import "./modules/global.scss";
+@import "./sections/header";
+@import "./sections/hero.scss";
+@import "./sections/advantages.scss";
+@import "./sections/investment.scss";
 @import './modules/global';
 @import "./sections/header";
 @import "./sections/introduction";
 @import "./sections/target";
-@import "./sections/footer"
+@import "./sections/footer";

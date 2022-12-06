@@ -1,10 +1,12 @@
 import * as flsFunctions from './modules/functions.js';
 import advantagesSwiper from './modules/advantagesSwiper.js';
+import translate from './translater/translate.js';
 import i18next from 'i18next';
 import ExitComponent from './modules/exitComponent.js';
 
 flsFunctions.isWebp()
 advantagesSwiper()
+translate()
 
 const burger = document.querySelector('.header__burger')
 const headerBody = document.querySelector('.header__body')

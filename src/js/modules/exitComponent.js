@@ -1,3 +1,4 @@
+import translater from "../translater/translater.js";
 import { getMarkup } from "./exitMarkups.js"
 
 export default class ExitComponent {
@@ -44,11 +45,10 @@ export default class ExitComponent {
 
   render() {
     this.$content.innerHTML = this.markup;
-    // if (document.querySelector('.menu_exit__button')) {
-    //   document.querySelector('.menu_exit__button').addEventListener('click', () => {
-    //     this.close()
-    //   })
-    // }
+        
+    const murkupId = document.querySelector('.menu_exit__body').id;
+    translater(murkupId)
+
     document.body.addEventListener('click' , (e) => {
       if(e.target === document.querySelector('.menu_exit__overlay') || !!e.target.closest('.menu_exit__button')) {
         this.close()

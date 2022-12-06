@@ -1,4 +1,9 @@
 .menu_exit {
+  #investStrategy{
+    .menu_exit__top{
+      margin: 0 0 60px;
+    }
+  }
   &._is-active{
     .menu_exit__content{
       right: 0;
@@ -36,14 +41,14 @@
     right: -100%;
     transition: .3s ease-in-out;
     @media (max-width: 1050px) {
-      padding: 60px 30px;
+      padding: 30px 30px;
     }
     @media (max-width: 800px) {
       width: 100%;
       top: 48px;
     }
     @media (max-width: 425px) {
-      padding: 60px 10px;
+      padding: 30px 10px;
     }
   }
 
@@ -57,6 +62,7 @@
 
   &__button {
     background: transparent;
+    cursor: pointer;
     border: none;
   }
 
@@ -75,10 +81,11 @@
     padding: 0px 0px 10px 0px;
     margin-bottom: 20px;
     display: flex;
-    @media (max-width: 1226px) {
-      flex-direction: column;
-      gap: 10px;
-    }
+    // @media (max-width: 1236px) {
+    //   gap: 10px;
+    //   flex-direction: column;
+    // }
+
   }
 
   &__list {
@@ -88,25 +95,18 @@
     text-decoration: none;
   }
 
-  &__text {
-    margin: 0px 20px 0px 0px;
+  &__percent{
+    width: 100px;
+    text-align: end;
+  }
 
-    &:nth-child(2) {
-      margin-left: auto;
-      @media (max-width: 1226px) {
-        margin: 0;
-      }
-    }
+  &__text {
+
+    margin-left: auto;
+    padding: 0 0 0 10px;
 
     &--green {
       color: #006F62;
-
-      &:nth-child(2) {
-        margin-left: 40px;
-        @media (max-width: 1226px) {
-          margin: 0;
-        }
-      }
     }
   }
 }

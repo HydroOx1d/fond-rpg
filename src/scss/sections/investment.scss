@@ -14,19 +14,6 @@
         flex: 0 1 auto;
     }
     &__title{
-        max-width: 653px;
-        @media (max-width: 1440px) {
-            span{
-                font-size: 36px;       
-            }
-            font-size: 36px;
-        }
-        @media (max-width: 800px) {
-            span{
-                font-size: 36px;
-            }
-            font-size: 36px;
-        }
     }
     &__text{
         max-width: 612px;

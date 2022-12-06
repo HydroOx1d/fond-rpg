@@ -2,8 +2,12 @@
   font-size: 40px;
   font-weight: 400;
   line-height: calc(46 / 40 * 100%);
-  @media(min-width: 576px) {
-    font-size: 64px;
+  text-transform: uppercase;
+  @media(max-width: 800px) {
+    font-size: 40px;
+  }
+  @media(max-width: 576px) {
+    font-size: 24px;
   }
 }
 
@@ -11,6 +15,7 @@
   font-size: 24px;
   font-weight: 400;
   line-height: calc(27 / 24 * 100% );
+  text-transform: uppercase;
   @media(min-width: 576px) {
     font-size: 40px;
   }
@@ -35,6 +40,10 @@
   @media(min-width: 576px) {
     font-size: 20px;
   }
+}
+
+.green {
+  color: $secondary;
 }
 
 ._ibg {

@@ -4,14 +4,13 @@
     &__wrap{
         display: flex;
         align-items: center;
-        justify-content: space-between;
         @media (max-width: 767px) {
             align-items: flex-start;
             flex-direction: column;
         }
     }
     &__info{
-        flex: 0 1 auto;
+        flex: 1 1 auto;
     }
     &__title{
     }
@@ -22,7 +21,7 @@
     
     &__image-wrap{
         width: 100%;
-        flex: 0 1 660px;
+        flex: 0 1 860px;
         padding: 0px 0px 31.3% 0px;
         margin: 0 0 0 20px;
 
@@ -30,9 +29,20 @@
             padding: 0px 0px 56.6% 0px;
         }
 
+        @media (max-width: 1200px) {
+            padding: 0px 0px 44% 0px;
+        }
+
         @media (max-width: 767px) {
             margin: 60px 0 0 0;
             flex: 0 1 100%;
+            padding: 0px 0px 57.9% 0px;
+        }
+
+        @media (max-width: 576px) {
+            margin: 60px 0 0 0;
+            flex: 0 1 100%;
+            padding: 0px 0px 99% 0px;
         }
     }
 }

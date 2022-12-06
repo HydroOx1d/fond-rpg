@@ -1,7 +1,7 @@
 import i18next from "i18next";
 
 
-export default function translater () {
+export default function translater (menuExit = '') {
 
     // header links
     document.querySelectorAll('.menu__item-link')[0].innerHTML = i18next.t('lang1');
@@ -118,5 +118,99 @@ export default function translater () {
     document.querySelectorAll('.item-data__text')[2].innerHTML = i18next.t('lang58');
 
 
-    
+    // menu exit introduction
+    if(menuExit === 'introduction'){
+        document.querySelector('#introduction .menu_exit__title').innerHTML = i18next.t('lang59');
+
+        document.querySelectorAll('#introduction .menu_exit__text')[0].innerHTML = i18next.t('lang60');
+        document.querySelectorAll('#introduction .menu_exit__text')[1].innerHTML = i18next.t('lang61');
+        document.querySelectorAll('#introduction .menu_exit__text')[2].innerHTML = i18next.t('lang62');
+
+        document.querySelectorAll('#introduction .introduction-menu__text')[0].innerHTML = i18next.t('lang63');
+        document.querySelectorAll('#introduction .introduction-menu__text')[1].innerHTML = i18next.t('lang64');
+        document.querySelectorAll('#introduction .introduction-menu__text')[2].innerHTML = i18next.t('lang65');
+        document.querySelectorAll('#introduction .introduction-menu__text')[3].innerHTML = i18next.t('lang66');
+    }
+
+    // menu exit aboutFond
+    if(menuExit === 'aboutFond'){
+        document.querySelector('#aboutFond .menu_exit__text').innerHTML = i18next.t('lang68');
+        document.querySelector('#aboutFond .menu_exit__title').innerHTML = i18next.t('lang67');
+    }
+
+    // menu exit investStrategy
+    if(menuExit === 'investStrategy'){
+        document.querySelector('#investStrategy .menu_exit__title').innerHTML = i18next.t('lang69');
+        
+        document.querySelector('#investStrategy .menu_exit__text').innerHTML = i18next.t('lang70');
+
+        document.querySelector('#investStrategy .investment-menu__text--green').innerHTML = i18next.t('lang92');
+
+
+        document.querySelectorAll('#investStrategy .investment-menu__title')[0].innerHTML = i18next.t('lang71');
+        document.querySelectorAll('#investStrategy .investment-menu__title')[1].innerHTML = i18next.t('lang80');
+        document.querySelectorAll('#investStrategy .investment-menu__title')[2].innerHTML = i18next.t('lang84');
+        document.querySelectorAll('#investStrategy .investment-menu__title')[3].innerHTML = i18next.t('lang98');
+        document.querySelectorAll('#investStrategy .investment-menu__title')[4].innerHTML = i18next.t('lang93');
+
+        document.querySelectorAll('#investStrategy .investment-menu__list-item')[0].innerHTML = i18next.t('lang72');
+        document.querySelectorAll('#investStrategy .investment-menu__list-item')[1].innerHTML = i18next.t('lang73');
+        document.querySelectorAll('#investStrategy .investment-menu__list-item')[2].innerHTML = i18next.t('lang74');
+        document.querySelectorAll('#investStrategy .investment-menu__list-item')[3].innerHTML = i18next.t('lang75');
+        document.querySelectorAll('#investStrategy .investment-menu__list-item')[4].innerHTML = i18next.t('lang76');
+        document.querySelectorAll('#investStrategy .investment-menu__list-item')[5].innerHTML = i18next.t('lang77');
+        document.querySelectorAll('#investStrategy .investment-menu__list-item')[6].innerHTML = i18next.t('lang78');
+        document.querySelectorAll('#investStrategy .investment-menu__list-item')[7].innerHTML = i18next.t('lang79');
+        document.querySelectorAll('#investStrategy .investment-menu__list-item')[8].innerHTML = i18next.t('lang81');
+        document.querySelectorAll('#investStrategy .investment-menu__list-item')[9].innerHTML = i18next.t('lang82');
+        document.querySelectorAll('#investStrategy .investment-menu__list-item')[10].innerHTML = i18next.t('lang83');
+        document.querySelectorAll('#investStrategy .investment-menu__list-item')[11].innerHTML = i18next.t('lang85');
+        document.querySelectorAll('#investStrategy .investment-menu__list-item')[12].innerHTML = i18next.t('lang86');
+        document.querySelectorAll('#investStrategy .investment-menu__list-item')[13].innerHTML = i18next.t('lang87');
+        document.querySelectorAll('#investStrategy .investment-menu__list-item')[14].innerHTML = i18next.t('lang88');
+        document.querySelectorAll('#investStrategy .investment-menu__list-item')[15].innerHTML = i18next.t('lang89');
+        document.querySelectorAll('#investStrategy .investment-menu__list-item')[16].innerHTML = i18next.t('lang90');
+        document.querySelectorAll('#investStrategy .investment-menu__list-item')[17].innerHTML = i18next.t('lang91');
+        document.querySelectorAll('#investStrategy .investment-menu__list-item')[18].innerHTML = i18next.t('lang94');
+        document.querySelectorAll('#investStrategy .investment-menu__list-item')[19].innerHTML = i18next.t('lang95');
+        document.querySelectorAll('#investStrategy .investment-menu__list-item')[20].innerHTML = i18next.t('lang96');
+        document.querySelectorAll('#investStrategy .investment-menu__list-item')[21].innerHTML = i18next.t('lang97');
+
+    }
+
+    // menu exit investCondition
+    if(menuExit === 'investCondition'){
+
+        document.querySelector('#investCondition .menu_exit__title').innerHTML = i18next.t('lang99');
+
+        document.querySelectorAll('#investCondition .investment-menu__title')[0].innerHTML = i18next.t('lang100');
+        document.querySelectorAll('#investCondition .investment-menu__title')[1].innerHTML = i18next.t('lang101');
+        document.querySelectorAll('#investCondition .investment-menu__title')[2].innerHTML = i18next.t('lang102');
+        document.querySelectorAll('#investCondition .investment-menu__title')[3].innerHTML = i18next.t('lang103');
+
+        document.querySelector('#investCondition .terms__subtitle').innerHTML = i18next.t('lang104');
+
+        document.querySelectorAll('#investCondition .investment-menu__list-item')[0].innerHTML = i18next.t('lang105');
+        document.querySelectorAll('#investCondition .investment-menu__list-item')[1].innerHTML = i18next.t('lang106');
+        document.querySelectorAll('#investCondition .investment-menu__list-item')[2].innerHTML = i18next.t('lang107');
+        
+        document.querySelectorAll('#investCondition .terms__item-text')[0].innerHTML = i18next.t('lang108');
+        document.querySelectorAll('#investCondition .terms__item-text')[1].innerHTML = i18next.t('lang109');
+        
+        document.querySelectorAll('#investCondition .terms-green-text')[0].innerHTML = i18next.t('lang110');
+        document.querySelectorAll('#investCondition .terms-green-text')[1].innerHTML = i18next.t('lang111');
+        document.querySelectorAll('#investCondition .terms-green-text')[2].innerHTML = i18next.t('lang112');
+
+        document.querySelectorAll('#investCondition .terms-from')[0].innerHTML = i18next.t('lang114');
+        document.querySelectorAll('#investCondition .terms-from')[1].innerHTML = i18next.t('lang114');
+        document.querySelectorAll('#investCondition .terms-from')[2].innerHTML = i18next.t('lang114');
+
+        document.querySelectorAll('#investCondition .terms-ago')[0].innerHTML = i18next.t('lang115');
+        document.querySelectorAll('#investCondition .terms-ago')[1].innerHTML = i18next.t('lang115');
+        document.querySelectorAll('#investCondition .terms-ago')[2].innerHTML = i18next.t('lang115');
+
+        document.querySelectorAll('#investCondition .terms-yy')[0].innerHTML = i18next.t('lang113');
+        document.querySelectorAll('#investCondition .terms-yy')[1].innerHTML = i18next.t('lang113');
+    }
+
 }

@@ -1,5 +1,5 @@
 const exitMarkups = {
-  introduction: `<div class="menu_exit__body">
+  introduction: `<div id='introduction' class="menu_exit__body">
   <div class="menu_exit__top">
     <h2 class="title-green menu_exit__title">введение</h2>
     <button class="menu_exit__button">
@@ -25,7 +25,7 @@ const exitMarkups = {
       <div class="introduction-menu__text--green text">+874%</div>
     </li>
     <li class="introduction-menu__item">
-      <div class="introduction-menu__text--green text">CureVac (вакцины)</div>
+      <div class="introduction-menu__text--green text">CureVac</div>
       <div class="introduction-menu__text  text">(Вакцины)</div>
       <div class="introduction-menu__text--green text">+638%</div>
     </li>
@@ -61,7 +61,7 @@ const exitMarkups = {
         высокими рисками.
   </p>
 </div>`,
-  aboutFond: `<div class="menu_exit__body">
+  aboutFond: `<div id='aboutFond' class="menu_exit__body">
   <div class="menu_exit__top">
     <h2 class="title-green menu_exit__title">о нас</h2>
     <button class="menu_exit__button">
@@ -96,7 +96,7 @@ const exitMarkups = {
                     компании «Royal Pure Gold».
   </p>
 </div>`,
-  investStrategy: `<div class="menu_exit__body">
+  investStrategy: `<div id='investStrategy' class="menu_exit__body">
   <div class="menu_exit__top">
     <h2 class="title-green menu_exit__title">инвестиционная стратегия</h2>
     <button class="menu_exit__button">
@@ -224,7 +224,7 @@ const exitMarkups = {
     </ol>
   </div>
 </div>`,
-  investCondition: `<div class="menu_exit__body">
+  investCondition: `<div id='investCondition' class="menu_exit__body">
   <div class="menu_exit__top">
     <h2 class="title-green menu_exit__title">Условия инвестирования</h2>
     <button class="menu_exit__button">
@@ -234,26 +234,26 @@ const exitMarkups = {
   <div class="terms">
     <div class="terms__item">
       <div class="terms__between-border terms__between-border--top">
-        <div class="terms__text--green text">Период продажи акций</div>
-        <div class="terms__text text">01.09.2021 - 01.01.2022 гг.</div>
+        <div class="terms__text--green text terms-green-text">Период продажи акций</div>
+        <div class="terms__text text">01.09.2021 - 01.01.2022 <span class='terms__text text terms-yy'>гг</span>.</div>
       </div>
       <div class="terms__between-border terms__between-border--top">
-        <div class="terms__text--green text">Дата начала торговли на бирже EVDE</div>
-        <div class="terms__text text">01.01.2022 гг.</div>
+        <div class="terms__text--green text terms-green-text">Дата начала торговли на бирже EVDE</div>
+        <div class="terms__text text">01.01.2022 <span class='terms__text text terms-yy'>гг</span>.</div>
       </div>
     </div>
     <div class="terms__item">
       <h3 class="investment-menu__title">Цены продажи одной акции состовляет</h3>
       <div class="terms__between-border">
-        <div class="terms__text text">От 01.11.2021 до 01.12.2021</div>
+        <div class="terms__text text"><span class='terms__text text terms-from'>От</span> 01.11.2021 <span class='terms__text text terms-ago'>до</span> 01.12.2021</div>
         <div class="terms__text--green text">10$</div>
       </div>
       <div class="terms__between-border">
-        <div class="terms__text text">От 01.11.2021 до 01.12.2021</div>
+        <div class="terms__text text"><span class='terms__text text terms-from'>От</span> 01.11.2021 <span class='terms__text text terms-ago'>до</span> 01.12.2021</div>
         <div class="terms__text--green text">11$</div>
       </div>
       <div class="terms__between-border">
-        <div class="terms__text text">От 01.11.2021 до 01.12.2022</div>
+        <div class="terms__text text"><span class='terms__text text terms-from'>От</span> 01.11.2021 <span class='terms__text text terms-ago'>до</span> 01.12.2022</div>
         <div class="terms__text--green text">12$</div>
       </div>
     </div>
@@ -271,13 +271,13 @@ const exitMarkups = {
           Кыргызских сомах, в эквиваленте долларов США
         </li>
       </ul>
-      <p class="terms__text--green text">
+      <p class="terms__text--green text terms-green-text">
         Выплата дивидендов - ежеквартальная (согласно дивидендной политике общества)
       </p>
     </div>
     <div class="terms__item">
       <h3 class="investment-menu__title">Условия</h3>
-      <p class="text">
+      <p class="text terms__item-text">
         Ожидаемая доходность портфеля <span class="terms__text--green">20-50%</span> годовых
         <br>
           <br>
@@ -289,7 +289,7 @@ const exitMarkups = {
     </div>
     <div class="terms__item">
       <h3 class="investment-menu__title">Вознаграждение</h3>
-      <p class="text terms__text">
+      <p class="text terms__text terms__item-text">
         Вознаграждение команды управляющих составляет 20% от полученной и инвестиционной прибыли
         <br>
           <br>

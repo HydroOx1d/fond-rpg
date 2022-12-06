@@ -46,7 +46,8 @@ export default class ExitComponent {
   render() {
     this.$content.innerHTML = this.markup;
         
-    translater()
+    const murkupId = document.querySelector('.menu_exit__body').id;
+    translater(murkupId)
 
     document.body.addEventListener('click' , (e) => {
       if(e.target === document.querySelector('.menu_exit__overlay') || !!e.target.closest('.menu_exit__button')) {

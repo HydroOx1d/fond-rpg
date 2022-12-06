@@ -22,6 +22,14 @@ burger.addEventListener('click', () => {
   }
 })
 
+document.querySelectorAll('.menu__item-link').forEach(link => {
+  link.addEventListener('click', () => {
+    document.body.style.overflow = 'auto'
+    document.querySelector('.header__menu').style.overflow = 'hidden'
+    headerBody.classList.remove('_menu-is-active')
+  })
+})
+
 
 
 // ExitComponent
@@ -33,5 +41,22 @@ document.addEventListener('DOMContentLoaded', () => {
     el.addEventListener('click', (e) => {
       exitComponent.open(e.target.closest('.exit-menu-btn').dataset.markup)
     })
+  })
+})
+
+document.addEventListener('scroll', () => {
+  const section = document.querySelectorAll('.hover-section')
+  
+  Array.from(section).forEach(el => {
+    const top = el.offsetTop - 100
+    const bottom = top + el.clientHeight
+    const scroll = window.pageYOffset
+    const id = el.id
+    
+    if(scroll > top && scroll < bottom) {
+      document.querySelector(`.menu__item-link[href="#${id}"]`).parentNode.classList.add('_is-current')
+    } else {
+      document.querySelector(`.menu__item-link[href="#${id}"]`).parentNode.classList.remove('_is-current')
+    }
   })
 })

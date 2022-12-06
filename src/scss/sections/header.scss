@@ -4,10 +4,7 @@
   z-index: 10;
   top: 0;
   left: 0;
-  padding: 21px 0px 21px 0px;
-  @media (max-width: 767px) {
-    padding: 12px 0px 12px 0px;
-  }
+  padding: 10px 0px 10px 0px;
   &__menu {
     @media (max-width: 1200px) {
       position: fixed;

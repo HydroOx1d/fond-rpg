@@ -1,6 +1,17 @@
 .hero {
     padding: 50px 0;
 
+    &__title{
+        font-size: 64px;
+        line-height: 74px;
+        font-weight: 400;
+        
+        @media (max-width: 600px){
+            font-size: 40px;
+            line-height: 46px;
+        }
+    }
+
     &__title-green{
         color: $secondary
     }

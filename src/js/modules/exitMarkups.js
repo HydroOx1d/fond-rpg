@@ -22,22 +22,26 @@ const exitMarkups = {
     <li class="introduction-menu__item">
       <div class="introduction-menu__text--green text">Greenwich Lifesciences</div>
       <div class="introduction-menu__text  text">(Средства против рака)</div>
-      <div class="introduction-menu__text--green text">+874%</div>
+      <div class="introduction-menu__text--green text  introduction-menu
+introduction-menu__percent">+874%</div>
     </li>
     <li class="introduction-menu__item">
       <div class="introduction-menu__text--green text">CureVac</div>
       <div class="introduction-menu__text  text">(Вакцины)</div>
-      <div class="introduction-menu__text--green text">+638%</div>
+      <div class="introduction-menu__text--green text   introduction-menu
+introduction-menu__percent">+638%</div>
     </li>
     <li class="introduction-menu__item">
       <div class="introduction-menu__text--green text">Keros Therapeutics</div>
       <div class="introduction-menu__text  text">(Средства регенирации костей и мышц)</div>
-      <div class="introduction-menu__text--green text">+380%</div>
+      <div class="introduction-menu__text--green text  introduction-menu
+introduction-menu__percent">+380%</div>
     </li>
     <li class="introduction-menu__item">
       <div class="introduction-menu__text--green text">Snowflake</div>
       <div class="introduction-menu__text  text">(Услуги облачного хранения и анализа данных)</div>
-      <div class="introduction-menu__text--green text">+171.3%</div>
+      <div class="introduction-menu__text--green text introduction-menu
+introduction-menu__percent">+171.3%</div>
     </li>
   </ul>
   <p class="text menu_exit__text">

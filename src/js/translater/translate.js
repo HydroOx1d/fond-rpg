@@ -24,7 +24,8 @@ export default async function translate() {
     enBtn.addEventListener('click', async () => {
         await i18next.changeLanguage('en', (err, t) => {
             if (err) return console.log('something went wrong loading', err);
-            
+            enBtn.classList.add('_is-current')
+            ruBtn.classList.remove('_is-current')
             translater()
           });
     })
@@ -32,9 +33,9 @@ export default async function translate() {
     ruBtn.addEventListener('click', async () => {
         await i18next.changeLanguage('ru', (err, t) => {
             if (err) return console.log('something went wrong loading', err);
-            
+            ruBtn.classList.add('_is-current')
+            enBtn.classList.remove('_is-current')
             translater()
-            
           });
     })
 

@@ -44,6 +44,7 @@
 .locale {
   display: flex;
   &__item {
+    text-transform: uppercase;
     cursor: pointer;
     margin: 0px 60px 0px 0px;
     transition: color 100ms ease;

@@ -1,6 +1,7 @@
 import * as flsFunctions from './modules/functions.js';
 import advantagesSwiper from './modules/advantagesSwiper.js';
 import i18next from 'i18next';
+import ExitComponent from './modules/exitComponent.js';
 
 flsFunctions.isWebp()
 advantagesSwiper()
@@ -17,4 +18,18 @@ burger.addEventListener('click', () => {
     document.body.style.overflow = 'auto'
     document.querySelector('.header__menu').style.overflow = 'hidden'
   }
+})
+
+
+
+// ExitComponent
+
+const exitComponent = new ExitComponent('.menu_exit');
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.exit-menu-btn').forEach(el => {
+    el.addEventListener('click', (e) => {
+      exitComponent.open(e.target.closest('.exit-menu-btn').dataset.markup)
+    })
+  })
 })

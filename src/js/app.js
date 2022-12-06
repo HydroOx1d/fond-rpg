@@ -20,6 +20,14 @@ burger.addEventListener('click', () => {
   }
 })
 
+document.querySelectorAll('.menu__item-link').forEach(link => {
+  link.addEventListener('click', () => {
+    document.body.style.overflow = 'auto'
+    document.querySelector('.header__menu').style.overflow = 'hidden'
+    headerBody.classList.remove('_menu-is-active')
+  })
+})
+
 
 
 // ExitComponent

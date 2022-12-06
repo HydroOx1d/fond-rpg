@@ -117,4 +117,6 @@ export default function translater () {
     document.querySelectorAll('.item-data__text')[1].innerHTML = i18next.t('lang57');
     document.querySelectorAll('.item-data__text')[2].innerHTML = i18next.t('lang58');
 
+
+    
 }

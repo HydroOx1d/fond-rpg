@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include('./html/head.html', {
-  "title": 'Главная'
+"title": 'Главная'
 })
 <body>
-  <div class="wrapper">
-    @@include('./html/header.html', {})
-    <main class="page">
-      @@include('./html/home/hero.html', {})
-      @@include('./html/home/introduction.html', {})      
-      @@include('./html/home/about_fond.html', {})
-      @@include('./html/home/advantages.html', {})
-      @@include('./html/home/target.html', {}) 
-      @@include('./html/home/investment.html', {})
-    </main>
-    @@include('./html/footer.html', {})
+<div class="wrapper">
+  @@include('./html/header.html', {})
+  <main class="page">
+    @@include('./html/home/hero.html', {})
+    @@include('./html/home/introduction.html', {})
+    @@include('./html/home/about_fond.html', {})
+    @@include('./html/home/advantages.html', {})
+    @@include('./html/home/target.html', {})
+    @@include('./html/home/investment.html', {})
+  </main>
+  @@include('./html/footer.html', {})
+  <div class="menu_exit">
+    <div class="menu_exit__overlay"></div>
+    <div class="menu_exit__content">
+      
+    </div>
   </div>
-  <script src="js/app.min.js"></script>
+</div>
+<script src="js/app.min.js"></script>
 </body>
 </html>

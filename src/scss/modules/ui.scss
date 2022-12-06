@@ -16,6 +16,19 @@
   }
 }
 
+.title-green{
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: calc(46 / 40 * 100% );
+  text-transform: uppercase;
+  color: #006F62;
+  @media (max-width: 576px) {
+    font-size: 26px;
+  }
+}
+
 .text {
   font-size: 16px;
   line-height: calc(20 / 16 * 100%);

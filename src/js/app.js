@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 document.addEventListener('scroll', () => {
-  const section = document.getElementsByTagName('section')
+  const section = document.querySelectorAll('.hover-section')
   
   Array.from(section).forEach(el => {
     const top = el.offsetTop - 100

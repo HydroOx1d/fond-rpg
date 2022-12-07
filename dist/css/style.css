@@ -1,5 +1,5 @@
 .title-large {
-  font-size: 40px;
+  font-size: 64px;
   font-weight: 400;
   line-height: 115%;
   text-transform: uppercase;
@@ -507,6 +507,7 @@ body {
   line-height: 116.6666666667%;
   color: #006F62;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .card-target__text {
@@ -813,6 +814,7 @@ body {
   line-height: 116.6666666667%;
   color: #006F62;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .card-target__text {
@@ -1008,7 +1010,7 @@ body {
           align-items: start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0px -50px -60px;
+  margin: 0px -20px -60px;
 }
 
 .footer__data-item {
@@ -1019,7 +1021,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 20%;
           flex: 0 1 20%;
-  padding: 0px 50px 60px 50px;
+  padding: 0px 20px 60px 20px;
 }
 
 .item-info {
@@ -1176,6 +1178,7 @@ body {
   text-transform: uppercase;
   color: #006F62;
   margin-bottom: 30px;
+  max-width: 600px;
 }
 
 .investment-menu__list {
@@ -1244,6 +1247,7 @@ body {
 
   .text {
     font-size: 20px;
+    line-height: 135%;
   }
 
   ._container {
@@ -1392,18 +1396,16 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .investment__title {
+    font-size: 48px;
+  }
+
   .investment__image-wrap {
     padding: 0px 0px 56.6% 0px;
   }
 
   .locale__item {
     margin: 0px 30px 0px 0px;
-  }
-
-  .footer__column {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 25%;
-            flex: 0 1 25%;
   }
 }
 
@@ -1516,6 +1518,12 @@ body {
   .footer__title {
     margin: 0px 0px 60px 0px;
   }
+
+  .footer__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 25%;
+            flex: 0 1 25%;
+  }
 }
 
 @media (max-width: 1050px) {
@@ -1527,6 +1535,10 @@ body {
 @media (max-width: 992px) {
   .header__menu {
     padding: 100px 20px 10px 0px;
+  }
+
+  .investment__title {
+    font-size: 36px;
   }
 
   .header__menu {
@@ -1584,6 +1596,10 @@ body {
             flex-direction: column;
   }
 
+  .investment__title {
+    font-size: 24px;
+  }
+
   .investment__image-wrap {
     margin: 60px 0 0 0;
     -webkit-box-flex: 0;
@@ -1600,15 +1616,10 @@ body {
     padding: 0px 0px 66.01% 0px;
   }
 
-  .footer__data {
-    margin: 0px -30px -40px;
-  }
-
   .footer__column {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
-    padding: 0px 30px 40px 30px;
   }
 }
 

@@ -27,15 +27,21 @@ export default class ExitComponent {
   close() {
     this.$el.classList.remove('_is-active')
 
-    document.body.style.overflow = 'auto'
-
+    this.$body.style.overflow = 'auto'
+    this.$body.style.paddingRight = 0;
+    this.$body.querySelector('header').style.paddingRight = 0;
     this.destroy()
   }
 
   open(dataset) {
     this.$el.classList.add('_is-active')
 
-    document.body.style.overflow = 'hidden'
+    this.$body = document.body;
+    const pr = window.innerWidth - this.$body.clientWidth
+    
+    this.$body.style.paddingRight =  pr + 'px'
+    this.$body.querySelector('header').style.paddingRight = pr + 'px'
+    this.$body.style.overflow = 'hidden'
 
     this.getMarkups(dataset).then(() => {
       this.$content =  this.$el.querySelector('.menu_exit__content')

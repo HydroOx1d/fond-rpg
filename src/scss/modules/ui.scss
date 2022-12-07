@@ -1,5 +1,5 @@
 .title-large {
-  font-size: 40px;
+  font-size: 64px;
   font-weight: 400;
   line-height: calc(46 / 40 * 100%);
   text-transform: uppercase;
@@ -39,6 +39,7 @@
   line-height: calc(20 / 16 * 100%);
   @media(min-width: 576px) {
     font-size: 20px;
+    line-height: calc(27 / 20 * 100%);
   }
 }
 

@@ -13,6 +13,17 @@
         flex: 1 1 auto;
     }
     &__title{
+        @media (max-width: 1440px) {
+            font-size: 48px;
+        }
+
+        @media(max-width: 992px) {
+            font-size: 36px;
+        }
+
+        @media(max-width: 767px) {
+            font-size: 24px;
+        }
     }
     &__text{
         max-width: 612px;

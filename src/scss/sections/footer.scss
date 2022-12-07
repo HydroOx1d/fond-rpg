@@ -105,6 +105,8 @@
     }
   }
   &-data {
+    display: flex;
+    flex-direction: column;
     &__title {
       font-size: 16px;
       font-weight: 400;

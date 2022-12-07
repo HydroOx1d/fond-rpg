@@ -49,6 +49,8 @@
 
 ._ibg {
   position: relative;
+  border-radius: 4px;
+  overflow: hidden;
   img {
     position: absolute;
     width: 100%;

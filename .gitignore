@@ -1,5 +1,7 @@
 /node_modules
-/dist
-/gulp/version.json
-
+/src/
+/gulp
 .idea
+package.json
+package-lock.json
+gulpfile.js

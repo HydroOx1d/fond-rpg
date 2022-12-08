@@ -3,6 +3,8 @@ import advantagesSwiper from './modules/advantagesSwiper.js';
 import translate from './translater/translate.js';
 import ExitComponent from './modules/exitComponent.js';
 
+AOS.init()
+
 flsFunctions.isWebp()
 advantagesSwiper()
 translate()

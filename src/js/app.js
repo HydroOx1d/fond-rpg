@@ -45,19 +45,49 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 })
 
-document.addEventListener('scroll', () => {
-  const section = document.querySelectorAll('.hover-section')
-  
-  Array.from(section).forEach(el => {
-    const top = el.offsetTop - 100
-    const bottom = top + el.clientHeight
-    const scroll = window.pageYOffset
-    const id = el.id
-    
-    if(scroll > top && scroll < bottom) {
-      document.querySelector(`.menu__item-link[href="#${id}"]`).parentNode.classList.add('_is-current')
-    } else {
-      document.querySelector(`.menu__item-link[href="#${id}"]`).parentNode.classList.remove('_is-current')
-    }
+let pageyoffset = window.pageYOffset;
+
+if(window.innerWidth > 1200) {
+  window.addEventListener('scroll', () => {
+    pageyoffset = window.pageYOffset
+
+    const section = document.querySelectorAll('.hover-section')
+
+    Array.from(section).forEach(el => {
+      const top = el.offsetTop - 100
+      const bottom = top + el.clientHeight
+      const scroll = pageyoffset
+      const id = el.id
+
+      if (scroll > top && scroll < bottom) {
+        document.querySelector(`.menu__item-link[href="#${id}"]`).parentNode.classList.add('_is-current')
+      } else {
+        document.querySelector(`.menu__item-link[href="#${id}"]`).parentNode.classList.remove('_is-current')
+      }
+    })
   })
-})
+
+
+  const anchors = document.querySelectorAll('.menu__item-link');
+
+  anchors.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault()
+
+      let id = e.target.href.slice(e.target.href.lastIndexOf('#'))
+      
+      let $el = document.querySelector(id)
+
+      if(pageyoffset < $el.offsetTop) {
+        window.scrollTo({
+          top: $el.offsetTop - 100
+        })
+      } else {
+          console.log(pageyoffset, $el.offsetTop)
+          window.scrollTo({
+            top: $el.offsetTop - 100
+          })
+      }
+    })
+  })
+}

@@ -102,14 +102,14 @@
             }
 
             &__title{
-                font-size: 34px;
+                font-size: 32px;
                 font-weight: 400;
                 line-height: calc(39 / 34 * 100%);
                 color: $secondary;
                 
                 height: 70px;
                 margin: 30px 0 70px;
-                @media (max-width: 800) {
+                @media (max-width: 800px) {
                     font-size: 30px;
                 }
             }
